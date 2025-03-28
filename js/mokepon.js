@@ -38,18 +38,24 @@ function seleccionarMascotaJugador(){
     let sectionSeleccionarAtaque= document.getElementById("seleccionar-ataque")
     sectionSeleccionarAtaque.style.display = "flex"
 
-    let hipodogeSeleccionado = document.getElementById("hipodoge").checked
-    let capipepoSeleccionado = document.getElementById("capipepo").checked
-    let ratigueyaSeleccionado = document.getElementById("ratigueya").checked
+    let pikachuSeleccionado = document.getElementById("pikachu").checked
+    let SquirtleSeleccionado = document.getElementById("Squirtle").checked
+    let CuboneSeleccionado = document.getElementById("Cubone").checked
+    let RowletSeleccionado = document.getElementById("Rowlet").checked
+    let CharizardSeleccionado = document.getElementById("Charizard").checked
 
     let spanMascotaJugador = document.getElementById("mascota-jugador")
 
     if (hipodogeSeleccionado){
-        spanMascotaJugador.innerHTML = "Hipodoge"
+        spanMascotaJugador.innerHTML = "pikachu"
     }else if(capipepoSeleccionado){
-        spanMascotaJugador.innerHTML = "Capipepo"
+        spanMascotaJugador.innerHTML = "Squirtle"
     }else if(ratigueyaSeleccionado){
-        spanMascotaJugador.innerHTML = "Ratigueya"
+        spanMascotaJugador.innerHTML = "Cubone"
+    }else if(capipepoSeleccionado){
+        spanMascotaJugador.innerHTML = "Rowlet"
+    }else if(capipepoSeleccionado){
+        spanMascotaJugador.innerHTML = "Charizard"
     }else{
         alert("Debes seleccionar una Mascota")
     }
@@ -62,11 +68,15 @@ function seleccionarMascotaEmemigo(){
     let spanMascotaEnemigo = document.getElementById("mascota-enemigo")
 
     if(mascotaAleatorio == 1){
-        spanMascotaEnemigo.innerHTML = "Hipodoge"
+        spanMascotaEnemigo.innerHTML = "pikachu"
     }else if(mascotaAleatorio == 2){
-        spanMascotaEnemigo.innerHTML = "Capipepo"
+        spanMascotaEnemigo.innerHTML = "Squirtle"
+    }else if(mascotaAleatorio == 2){
+        spanMascotaEnemigo.innerHTML = "Cubone"
+    }else if(mascotaAleatorio == 2){
+        spanMascotaEnemigo.innerHTML = "Rowlet"
     }else{
-        spanMascotaEnemigo.innerHTML = "Ratigueya"
+        spanMascotaEnemigo.innerHTML = "Charizard"
     }
 
 }
